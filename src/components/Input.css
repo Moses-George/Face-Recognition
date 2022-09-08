@@ -1,0 +1,56 @@
+form {
+    display: flex;
+    justify-content: center;
+    background-image: url("../Images/bg-shorten-desktop.svg");
+    padding: 2rem;
+    background-color: hsl(257, 27%, 26%);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%)
+}
+
+form input {
+    padding: .8rem 1rem;
+    width: 30rem;
+    border: none;
+    font-size: 20px;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+form button {
+    padding: 0 1rem;
+    border: none;
+    border-radius: 0 .7rem .7rem 0;
+    background-color: hsl(261, 83%, 7%);
+    color: #fff;
+    font-size: 18px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: rgb(245, 133, 133);
+}
+
+form button:hover {
+    background-color: hsl(260, 68%, 17%);
+    cursor: pointer;
+}
+
+@media   (max-width: 500px) {
+    form {
+        flex-direction: column;
+        row-gap: .5rem;
+        padding: 1rem;
+        width: 90%;
+    }
+    form input {
+        width: 100%;
+        border-radius: .7rem;
+    }
+    form button {
+        width: 100%;
+        padding: .8rem;
+        border-radius: .7rem;
+    }
+}

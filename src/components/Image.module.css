@@ -1,0 +1,23 @@
+.face-recognition {
+    position: relative;
+    height: auto;
+    width: fit-content;
+}
+
+.face-recognition div {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid blue;
+}
+
+@media   (max-width: 500px) {
+    .face-recognition {
+        width: 90%;
+    }
+
+    .face-recognition img {
+        width: 100%;
+    }
+}
